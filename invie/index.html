@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Invie - tus mejores guitarras!!</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/invie.css" />
+	</head>
+	<body>
+		<section id="portada" class="portada background"> <!-- portada -->
+			<header id="header" class="header contenedor"> <!-- header -->
+				<figure class="logotipo"> <!-- logotipo -->
+					<img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
+				</figure>
+				<nav class="menu"> <!-- menu -->
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="#guitarras">Guitarras</a>
+						</li>
+						<li>
+							<a href="precios.html">Precios</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="contenedor"><!--  En este caso la imagen está asignada como background y por defecto esta intentará ocupar 							todo el campo disponible de su contenedor -->
+				<h1 class="titulo">Guitarras <span>invie</span>sibles</h1> <!-- titulo --> 
+				<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+				<a href="#guitarras" class="button">Conoce más</a> <!-- boton -->
+			</div>			
+		</section>
+		<section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
+			<h2>Nuestras guitarras</h2> <!-- titulo -->
+			<article class="guitarra"> <!-- guitarra 1 -->
+				<img class="derecha" src="images/invie-acustica.png" alt="Guitarra Invie Acústica" width="350">
+				<div class="contenedor-guitarra-a">
+					<h3 class="title-b">Invie Acústica</h3>
+					<ol>
+						<li>Estilo vintage</li>
+					</ol>
+					<ol>
+						<li>Madera pura</li>
+					</ol>
+					<ol>
+						<li>Incluye estuche invisible de aluminio</li>
+					</ol>					
+				</div>
+			</article>	
+			<article class="guitarra b"> <!-- guitarra 2 -->
+				<img class="izquierda" src="images/invie-classic.png" alt="Guitarra Invie Classic" width="350">
+				<div class="contenedor-guitarra-b">
+					<h3 class="title-b">Invie Classic</h3>
+					<ol>
+						<li>Estilo vintage</li>
+					</ol>
+					<ol>
+						<li>Liviana</li>
+					</ol>
+					<ol>
+						<li>Inicia tu camino como rockstar</li>
+					</ol>					
+				</div>
+			</article>			
+		</section>
+		<footer class="footer">
+			<div class="contenedor">
+				<div class="contacto">
+					<img src="images/invie-white.png" alt="Logotipo blanco">
+					<a href="tel:+595982771193"><strong>Teléfono</strong><span>82771193</span></a>
+					<a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+				</div>	
+				<form class="formulario">
+					<div class="col1">
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre" name="nombre" required/>
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" required />
+						<div class="sexo">
+							<label for="mujer">
+								<input type="radio" id="mujer" name="sexo" value="mujer" checked /> mujer											
+							</label>
+							<label for="hombre">
+								<input type="radio" id="hombre" name="sexo" value="hombre" /> hombre											
+							</label>
+						</div>	
+						<div class="intereses">
+							<label for="cotizacion">
+								<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked />Cotización							
+							</label>
+							<label for="reclamos">
+								<input type="checkbox" id="reclamos" name="intereses" value="reclamos" />Reclamos							
+							</label>
+							<label for="comentarios">
+								<input type="checkbox" id="comentarios" name="intereses" value="comentarios" />Comentarios							
+							</label>
+							<label for="otros">
+								<input type="checkbox" id="otros" name="intereses" value="otros" />Otros							
+							</label>
+						</div>	
+					</div>						
+					<div class="col2">
+						<label for="asunto">Asunto</label>
+						<textarea name="asunto" id="asunto" cols="30" rows="7"></textarea>
+						<input type="submit" value="Enviar" class="button" />
+					</div>	
+				</form>			
+			</div>
+		</footer>
+	</body>
+</html>
